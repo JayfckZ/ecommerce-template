@@ -11,6 +11,8 @@ export type CartItem = {
 
 type CartState = {
     items: CartItem[]
+    isOpen: boolean
+    toggleCart: () => void
     addToCart: (product: Omit<CartItem, "quantity">) => void
     removeFromCart: (productId: number) => void
     updateQuantity: (productId: number, quantity: number) => void
@@ -19,6 +21,10 @@ type CartState = {
 
 export const useCartStore = create<CartState>((set) => ({
     items: [],
+    isOpen: false,
+
+    // alterna a visibilidade do carrinho
+    toggleCart: () => set((state) => ({ isOpen: !state.isOpen })),
 
     // adiciona um item ao carrinho ou incrementa a quantidade se já existir
     addToCart: (product) =>
