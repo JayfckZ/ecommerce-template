@@ -3,11 +3,13 @@ import Home from "./pages/Home"
 import ProductPage from "./pages/ProductPage"
 import Cart from "./pages/Cart"
 import Navbar from "./components/Navbar"
+import CartSidebar from "./components/CartSidebar"
 
 export default function App() {
   return (
     <Router>
       <Navbar />
+      <CartSidebar />
       <main className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
