@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        coffee: {
+        styled: {
           light: "#F5EBDD",   // fundo
           DEFAULT: "#D6BFA7", // caixas/divs
           dark: "#8B5E3C",    // botões
