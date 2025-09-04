@@ -10,7 +10,7 @@ export default function App() {
     <Router>
       <Navbar />
       <CartSidebar />
-      <main className="p-4">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductPage />} />
