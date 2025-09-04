@@ -22,7 +22,7 @@ export default function CartSidebar() {
             </button>
         </div>
 
-        <div className="p-4 space-y-4 overflow-y-auto h-[calc(100%-120px)]">
+        <div className="p-4 space-y-4 overflow-y-auto h-[calc(100%-165px)]">
             {items.length === 0 ? (
             <p className="text-styled-dark">Carrinho vazio</p>
             ) : (

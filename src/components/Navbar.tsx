@@ -19,8 +19,8 @@ export default function Navbar() {
             Cart
             </Link>
 
-            <button onClick={toggleCart} className="relative text-styled-light hover:text-styled-rich transition-colors">
-            🛒
+            <button onClick={toggleCart} className="relative text-styled-light hover:text-styled-rich transition-colors text-2xl">
+            <i className='bi bi-cart3'></i>
             {totalItems > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-xs px-2 py-0.5 rounded-full">
                 {totalItems}
